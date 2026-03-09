@@ -70,9 +70,10 @@ outputs:
         - spdlog
         - eigen
         - fmt
+      run:
+        - ${{ pin_compatible('openvdb', upper_bound='x.x') }}
       run_exports:
         - ${{ pin_subpackage('libcoacd', upper_bound='x.x.x') }}
-        - ${{ pin_compatible('openvdb', upper_bound='x.x') }}
       ignore_run_exports:
         from_package:
           - libboost-python-devel

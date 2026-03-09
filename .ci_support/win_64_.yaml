@@ -9,8 +9,16 @@ channel_targets:
 cxx_compiler:
 - vs2022
 fmt:
-- '12.0'
+- '12.1'
+libboost_python_devel:
+- '1.86'
 python_min:
 - '3.10'
+spdlog:
+- '1.17'
 target_platform:
 - win-64
+tbb_devel:
+- '2022'
+zlib:
+- '1'

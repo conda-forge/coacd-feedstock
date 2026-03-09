@@ -63,13 +63,15 @@ outputs:
         - ninja
         - pkg-config
       host:
-        - zlib >=1.2.11
-        - libboost-python-devel >=1.81.0
-        - openvdb >=8.2.0
-        - tbb-devel >=2022.0.0
-        - spdlog >=1.8.2
-        - eigen >=3.4.0
+        - zlib
+        - libboost-python-devel
+        - openvdb
+        - tbb-devel
+        - spdlog
+        - eigen
         - fmt
+      run:
+        - ${{ pin_compatible('openvdb', upper_bound='x.x') }}
       run_exports:
         - ${{ pin_subpackage('libcoacd', upper_bound='x.x.x') }}
       ignore_run_exports:

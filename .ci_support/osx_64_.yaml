@@ -19,13 +19,21 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 fmt:
-- '12.0'
+- '12.1'
+libboost_python_devel:
+- '1.86'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 python_min:
 - '3.10'
+spdlog:
+- '1.17'
 target_platform:
 - osx-64
+tbb_devel:
+- '2022'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+zlib:
+- '1'

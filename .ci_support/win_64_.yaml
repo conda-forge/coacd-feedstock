@@ -12,5 +12,9 @@ fmt:
 - '12.1'
 python_min:
 - '3.10'
+spdlog:
+- '1.17'
 target_platform:
 - win-64
+zlib:
+- '1'

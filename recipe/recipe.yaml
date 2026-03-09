@@ -72,7 +72,7 @@ outputs:
         - fmt
       run_exports:
         - ${{ pin_subpackage('libcoacd', upper_bound='x.x.x') }}
-        - ${{ pin_compatible('openvdb', max_pin='x.x') }}
+        - ${{ pin_compatible('openvdb', upper_bound='x.x') }}
       ignore_run_exports:
         from_package:
           - libboost-python-devel

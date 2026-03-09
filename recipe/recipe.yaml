@@ -63,12 +63,12 @@ outputs:
         - ninja
         - pkg-config
       host:
-        - zlib >=1.2.11
+        - zlib
         - libboost-python-devel >=1.81.0
         - openvdb >=8.2.0
         - tbb-devel >=2022.0.0
-        - spdlog >=1.8.2
-        - eigen >=3.4.0
+        - spdlog
+        - eigen
         - fmt
       run_exports:
         - ${{ pin_subpackage('libcoacd', upper_bound='x.x.x') }}

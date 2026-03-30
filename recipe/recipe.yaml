@@ -5,7 +5,7 @@ context:
   version: 1.0.7
   build_number: 4
   cdt_vendor_version: 1.4.4
-  # Touch variables to help rattler-build creating the variants.
+  # Touch variables to help rattler-build create the variants.
   _fmt: ${{ fmt }}
   _spdlog: ${{ spdlog }}
   _tbb_devel: ${{ tbb_devel }}

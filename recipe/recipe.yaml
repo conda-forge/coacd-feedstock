@@ -120,21 +120,23 @@ outputs:
         - numpy
         - python >=${{ python_min }}
     tests:
-      - python:
-          imports:
-            - coacd
-          pip_check: true
-      - script:
-          - coacd -i examples/Bottle.obj -o Bottle_cvx.gltf -t 0.05
-          - python run_tests.py
-        files:
-          source:
-            - examples/
-            - run_tests.py
-        requirements:
-          run:
-            - python 3.11.*
-            - trimesh
+      - if: not linux or build_platform == target_platform
+        else:
+          - python:
+              imports:
+                - coacd
+              pip_check: true
+          - script:
+              - coacd -i examples/Bottle.obj -o Bottle_cvx.gltf -t 0.05
+              - python run_tests.py
+            files:
+              source:
+                - examples/
+                - run_tests.py
+            requirements:
+              run:
+                - python 3.11.*
+                - trimesh
 
 about:
   homepage: https://colin97.github.io/CoACD

@@ -27,19 +27,19 @@ jobs:
       linux_aarch64_fmt11.2spdlog1.16tbb_devel2021:
         CONFIG: linux_aarch64_fmt11.2spdlog1.16tbb_devel2021
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_fmt11.2spdlog1.16tbb_devel2022:
         CONFIG: linux_aarch64_fmt11.2spdlog1.16tbb_devel2022
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_fmt12.1spdlog1.17tbb_devel2021:
         CONFIG: linux_aarch64_fmt12.1spdlog1.17tbb_devel2021
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_fmt12.1spdlog1.17tbb_devel2022:
         CONFIG: linux_aarch64_fmt12.1spdlog1.17tbb_devel2022
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma9
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
   timeoutInMinutes: 360
   variables: {}
 

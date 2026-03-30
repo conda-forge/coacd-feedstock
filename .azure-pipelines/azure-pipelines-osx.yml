@@ -8,12 +8,20 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_:
-        CONFIG: osx_64_
+      osx_64_tbb_devel2021:
+        CONFIG: osx_64_tbb_devel2021
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_arm64_:
-        CONFIG: osx_arm64_
+      osx_64_tbb_devel2022:
+        CONFIG: osx_64_tbb_devel2022
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_arm64_tbb_devel2021:
+        CONFIG: osx_arm64_tbb_devel2021
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+      osx_arm64_tbb_devel2022:
+        CONFIG: osx_arm64_tbb_devel2022
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
   timeoutInMinutes: 360

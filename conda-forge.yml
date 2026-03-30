@@ -10,7 +10,7 @@ bot:
   automerge: true
   inspection: update-all
 build_platform:
-  linux_aarch64: linux_aarch64
+  linux_aarch64: linux_64
   osx_arm64: osx_arm64
 provider:
   linux_64: azure

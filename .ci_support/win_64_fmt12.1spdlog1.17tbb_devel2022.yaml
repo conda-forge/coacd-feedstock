@@ -20,5 +20,8 @@ target_platform:
 - win-64
 tbb_devel:
 - '2022'
+zip_keys:
+- - fmt
+  - spdlog
 zlib:
 - '1'

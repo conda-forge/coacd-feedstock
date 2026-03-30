@@ -8,20 +8,36 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_tbb_devel2021:
-        CONFIG: osx_64_tbb_devel2021
+      osx_64_fmt11.2spdlog1.16tbb_devel2021:
+        CONFIG: osx_64_fmt11.2spdlog1.16tbb_devel2021
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_64_tbb_devel2022:
-        CONFIG: osx_64_tbb_devel2022
+      osx_64_fmt11.2spdlog1.16tbb_devel2022:
+        CONFIG: osx_64_fmt11.2spdlog1.16tbb_devel2022
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_arm64_tbb_devel2021:
-        CONFIG: osx_arm64_tbb_devel2021
+      osx_64_fmt12.1spdlog1.17tbb_devel2021:
+        CONFIG: osx_64_fmt12.1spdlog1.17tbb_devel2021
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_64_fmt12.1spdlog1.17tbb_devel2022:
+        CONFIG: osx_64_fmt12.1spdlog1.17tbb_devel2022
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_arm64_fmt11.2spdlog1.16tbb_devel2021:
+        CONFIG: osx_arm64_fmt11.2spdlog1.16tbb_devel2021
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
-      osx_arm64_tbb_devel2022:
-        CONFIG: osx_arm64_tbb_devel2022
+      osx_arm64_fmt11.2spdlog1.16tbb_devel2022:
+        CONFIG: osx_arm64_fmt11.2spdlog1.16tbb_devel2022
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+      osx_arm64_fmt12.1spdlog1.17tbb_devel2021:
+        CONFIG: osx_arm64_fmt12.1spdlog1.17tbb_devel2021
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+      osx_arm64_fmt12.1spdlog1.17tbb_devel2022:
+        CONFIG: osx_arm64_fmt12.1spdlog1.17tbb_devel2022
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
   timeoutInMinutes: 360

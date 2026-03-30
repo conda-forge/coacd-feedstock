@@ -1,0 +1,27 @@
+c_compiler:
+- vs2022
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2022
+fmt:
+- '11.2'
+libboost_python_devel:
+- '1.86'
+python_min:
+- '3.10'
+spdlog:
+- '1.16'
+target_platform:
+- win-64
+tbb_devel:
+- '2022'
+zip_keys:
+- - fmt
+  - spdlog
+zlib:
+- '1'

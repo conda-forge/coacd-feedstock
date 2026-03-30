@@ -31,9 +31,11 @@ spdlog:
 target_platform:
 - osx-64
 tbb_devel:
-- '2022'
+- '2021'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+- - fmt
+  - spdlog
 zlib:
 - '1'

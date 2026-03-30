@@ -121,7 +121,7 @@ outputs:
         - python >=${{ python_min }}
     tests:
       - if: not linux or build_platform == target_platform
-        else:
+        then:
           - python:
               imports:
                 - coacd

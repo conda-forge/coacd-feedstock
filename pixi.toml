@@ -23,12 +23,30 @@ description = "List contents of all packages found in rattler-build build direct
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build coacd-feedstock directly (without setup scripts), no particular variant specified"
-[tasks."build-linux_64_"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_.yaml"
-description = "Build coacd-feedstock with variant linux_64_ directly (without setup scripts)"
-[tasks."inspect-linux_64_"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_.yaml"
-description = "List contents of coacd-feedstock packages built for variant linux_64_"
+[tasks."build-linux_64_fmt11.2spdlog1.16tbb_devel2021"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_fmt11.2spdlog1.16tbb_devel2021.yaml"
+description = "Build coacd-feedstock with variant linux_64_fmt11.2spdlog1.16tbb_devel2021 directly (without setup scripts)"
+[tasks."inspect-linux_64_fmt11.2spdlog1.16tbb_devel2021"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_fmt11.2spdlog1.16tbb_devel2021.yaml"
+description = "List contents of coacd-feedstock packages built for variant linux_64_fmt11.2spdlog1.16tbb_devel2021"
+[tasks."build-linux_64_fmt11.2spdlog1.16tbb_devel2022"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_fmt11.2spdlog1.16tbb_devel2022.yaml"
+description = "Build coacd-feedstock with variant linux_64_fmt11.2spdlog1.16tbb_devel2022 directly (without setup scripts)"
+[tasks."inspect-linux_64_fmt11.2spdlog1.16tbb_devel2022"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_fmt11.2spdlog1.16tbb_devel2022.yaml"
+description = "List contents of coacd-feedstock packages built for variant linux_64_fmt11.2spdlog1.16tbb_devel2022"
+[tasks."build-linux_64_fmt12.1spdlog1.17tbb_devel2021"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_fmt12.1spdlog1.17tbb_devel2021.yaml"
+description = "Build coacd-feedstock with variant linux_64_fmt12.1spdlog1.17tbb_devel2021 directly (without setup scripts)"
+[tasks."inspect-linux_64_fmt12.1spdlog1.17tbb_devel2021"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_fmt12.1spdlog1.17tbb_devel2021.yaml"
+description = "List contents of coacd-feedstock packages built for variant linux_64_fmt12.1spdlog1.17tbb_devel2021"
+[tasks."build-linux_64_fmt12.1spdlog1.17tbb_devel2022"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_fmt12.1spdlog1.17tbb_devel2022.yaml"
+description = "Build coacd-feedstock with variant linux_64_fmt12.1spdlog1.17tbb_devel2022 directly (without setup scripts)"
+[tasks."inspect-linux_64_fmt12.1spdlog1.17tbb_devel2022"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_fmt12.1spdlog1.17tbb_devel2022.yaml"
+description = "List contents of coacd-feedstock packages built for variant linux_64_fmt12.1spdlog1.17tbb_devel2022"
 [tasks."build-linux_aarch64_fmt11.2spdlog1.16tbb_devel2021"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_fmt11.2spdlog1.16tbb_devel2021.yaml"
 description = "Build coacd-feedstock with variant linux_aarch64_fmt11.2spdlog1.16tbb_devel2021 directly (without setup scripts)"

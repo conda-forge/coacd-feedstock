@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: coacd
-  version: 1.0.7
-  build_number: 4
+  version: "1.0.8"
+  build_number: 0
   cdt_vendor_version: 1.4.4
   # Touch variables to help rattler-build create the variants.
   _fmt: ${{ fmt }}
@@ -16,7 +16,7 @@ recipe:
 
 source:
   - url: https://github.com/SarahWeiii/CoACD/archive/refs/tags/${{ version }}.zip
-    sha256: fce6ecc14dd248234111552592b2a80b16de716bc85c8c3a6346028195d5d083
+    sha256: 632ce12662f248b23bdcf93e9cf2708108e2ee1fcbbfac94c78d054983a279f7
     patches:
       - 01-add-missing-cstdint-include.patch
       - 02-fix-spdlog-v1-compatibility-and-constexpr.patch
@@ -45,17 +45,11 @@ outputs:
         - if: unix
           then:
             - echo ${CMAKE_ARGS}
-            - cmake -S . -B build -GNinja
-              ${CMAKE_ARGS}
-              -DBUILD_SHARED_LIBS=ON
-              -DCMAKE_POLICY_DEFAULT_CMP0167=NEW
+            - cmake -S . -B build -GNinja ${CMAKE_ARGS} -DBUILD_SHARED_LIBS=ON -DCMAKE_POLICY_DEFAULT_CMP0167=NEW
         - if: win
           then:
             - echo %CMAKE_ARGS%
-            - cmake -S . -B build -GNinja
-              %CMAKE_ARGS%
-              -DBUILD_SHARED_LIBS=ON
-              -DCMAKE_POLICY_DEFAULT_CMP0167=NEW
+            - cmake -S . -B build -GNinja %CMAKE_ARGS% -DBUILD_SHARED_LIBS=ON -DCMAKE_POLICY_DEFAULT_CMP0167=NEW
         - cmake --build build --config Release
         - cmake --install build --config Release
     requirements:

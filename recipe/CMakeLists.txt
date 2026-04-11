@@ -37,7 +37,7 @@ add_library(
 
 target_compile_definitions(_coacd PRIVATE WITH_3RD_PARTY_LIBS=1)
 
-target_include_directories(_coacd PRIVATE 3rd/cdt/CDT)
+target_include_directories(_coacd PRIVATE 3rd/cdt/CDT/include)
 target_include_directories(_coacd PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/public>
     $<INSTALL_INTERFACE:include/coacd>

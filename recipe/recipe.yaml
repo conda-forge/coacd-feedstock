@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: coacd
-  version: "1.0.9"
+  version: "1.0.10"
   build_number: 0
   cdt_vendor_version: 1.4.4
   # Touch variables to help rattler-build create the variants.
@@ -16,7 +16,7 @@ recipe:
 
 source:
   - url: https://github.com/SarahWeiii/CoACD/archive/refs/tags/${{ version }}.zip
-    sha256: 889300a9910b6f1722a687e1ef2d293e306426c5235a5b9072f53ed5f371b509
+    sha256: c52b301d7ff86275eb00a7e635e0e19c2102157f1baf8dcd40b59a12d60a531b
     patches:
       - 01-add-missing-cstdint-include.patch
       - 02-fix-spdlog-v1-compatibility-and-constexpr.patch

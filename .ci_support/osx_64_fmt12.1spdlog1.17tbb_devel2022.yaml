@@ -21,7 +21,7 @@ cxx_compiler_version:
 fmt:
 - '12.1'
 libboost_python_devel:
-- '1.86'
+- '1.88'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 python_min:

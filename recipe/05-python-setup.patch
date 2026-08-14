@@ -1,9 +1,9 @@
 --- a/python/package/bin/coacd
 +++ b/python/package/bin/coacd
-@@ -13,7 +13,7 @@
+@@ -13,7 +13,7 @@ import os
  import argparse
  import coacd
-
+ 
 -if __name__ == "__main__":
 +def main():
      parser = argparse.ArgumentParser()
@@ -11,7 +11,7 @@
          "-i",
 --- a/setup.py
 +++ b/setup.py
-@@ -102,9 +102,7 @@
+@@ -103,9 +103,6 @@ setup(
      packages=["coacd"],
      python_requires=">=3.9",
      install_requires=["numpy"],

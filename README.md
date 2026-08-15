@@ -36,115 +36,17 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_fmt11.2spdlog1.16tbb_devel2021</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_fmt11.2spdlog1.16tbb_devel2021" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_fmt11.2spdlog1.16tbb_devel2022</td>
+              <td>osx_arm64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_fmt11.2spdlog1.16tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_fmt12.1spdlog1.17tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_fmt12.1spdlog1.17tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_fmt12.1spdlog1.17tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_fmt12.1spdlog1.17tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_fmt11.2spdlog1.16tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_fmt11.2spdlog1.16tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_fmt11.2spdlog1.16tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_fmt11.2spdlog1.16tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_fmt12.1spdlog1.17tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_fmt12.1spdlog1.17tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_fmt12.1spdlog1.17tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_fmt12.1spdlog1.17tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_fmt11.2spdlog1.16tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_fmt11.2spdlog1.16tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_fmt11.2spdlog1.16tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_fmt11.2spdlog1.16tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_fmt12.1spdlog1.17tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_fmt12.1spdlog1.17tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_fmt12.1spdlog1.17tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_fmt12.1spdlog1.17tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_fmt11.2spdlog1.16tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_fmt11.2spdlog1.16tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_fmt11.2spdlog1.16tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_fmt11.2spdlog1.16tbb_devel2022" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_fmt12.1spdlog1.17tbb_devel2021</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_fmt12.1spdlog1.17tbb_devel2021" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_fmt12.1spdlog1.17tbb_devel2022</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=27623&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_fmt12.1spdlog1.17tbb_devel2022" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/coacd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr>

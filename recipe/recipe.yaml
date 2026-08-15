@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: coacd
-  version: "1.0.10"
+  version: "1.0.12"
   build_number: 0
   cdt_vendor_version: 1.4.4
   # Touch variables to help rattler-build create the variants.
@@ -16,11 +16,8 @@ recipe:
 
 source:
   - url: https://github.com/SarahWeiii/CoACD/archive/refs/tags/${{ version }}.zip
-    sha256: c52b301d7ff86275eb00a7e635e0e19c2102157f1baf8dcd40b59a12d60a531b
+    sha256: 92cf6e62ed86c66319bb730be9884e10b251c837e12d538c56a9012fea702d3d
     patches:
-      - 01-add-missing-cstdint-include.patch
-      - 02-fix-spdlog-v1-compatibility-and-constexpr.patch
-      - 03-fix-missing-std-namespace-for-string.patch
       - 04-python-load-shared-library-from-system.patch
       - 05-python-setup.patch
 
@@ -129,6 +126,8 @@ outputs:
                 - run_tests.py
             requirements:
               run:
+                # Pinned to 3.11 (not python_min) because the libcoacd run
+                # dependency openvdb forces python_abi 3.11 in the test env.
                 - python 3.11.*
                 - trimesh
 

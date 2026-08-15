@@ -11,7 +11,7 @@ cxx_compiler:
 fmt:
 - '12.1'
 libboost_python_devel:
-- '1.86'
+- '1.88'
 python_min:
 - '3.10'
 spdlog:
@@ -19,9 +19,6 @@ spdlog:
 target_platform:
 - win-64
 tbb_devel:
-- '2022'
-zip_keys:
-- - fmt
-  - spdlog
+- '2023'
 zlib:
 - '1'

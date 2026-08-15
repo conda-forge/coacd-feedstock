@@ -37,6 +37,11 @@ add_library(
 
 target_compile_definitions(_coacd PRIVATE WITH_3RD_PARTY_LIBS=1)
 
+# Since 1.0.12 upstream gates parallelism behind OpenMP or WITH_STD_THREADS,
+# falling back to sequential execution otherwise. Enable the std::thread path
+# to preserve multi-threaded behavior using the already-linked Threads::Threads.
+target_compile_definitions(_coacd PRIVATE WITH_STD_THREADS=1)
+
 target_include_directories(_coacd PRIVATE 3rd/cdt/CDT/include)
 target_include_directories(_coacd PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/public>

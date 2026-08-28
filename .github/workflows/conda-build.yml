@@ -143,6 +143,7 @@ jobs:
         call ".scripts\run_win_build.bat"
       env:
         BUILD_PLATFORM: ${{ matrix.build_platform }}
+        HOST_PLATFORM: ${{ matrix.build_platform }}
         CI: github_actions
         CONDA_BLD_PATH: ${{ matrix.build_workspace_dir }}
         CONFIG: ${{ matrix.CONFIG }}

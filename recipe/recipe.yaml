@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: coacd
-  version: "1.0.12"
+  version: "1.0.13"
   build_number: 0
   cdt_vendor_version: 1.4.4
   # Touch variables to help rattler-build create the variants.
@@ -16,7 +16,7 @@ recipe:
 
 source:
   - url: https://github.com/SarahWeiii/CoACD/archive/refs/tags/${{ version }}.zip
-    sha256: 92cf6e62ed86c66319bb730be9884e10b251c837e12d538c56a9012fea702d3d
+    sha256: e2b5d56b0385961abae85bce5fae34a33aff66fcad9f8804cb22baa541cebe4e
     patches:
       - 04-python-load-shared-library-from-system.patch
       - 05-python-setup.patch
